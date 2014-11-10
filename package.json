@@ -1,0 +1,15 @@
+{
+	"name": "docpad-plugin-ejs",
+	"version": "2.0.0",
+	"keywords": [
+		"docpad",
+		"docpad-plugin"
+	],
+	"dependencies": {
+		"ejs": "^1.0.0"
+	},
+	"peerDependencies": {
+		"docpad": "6"
+	},
+	"main": "./src/ejs.plugin.js"
+}
