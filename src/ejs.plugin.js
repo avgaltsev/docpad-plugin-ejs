@@ -11,6 +11,7 @@ module.exports = function (BasePlugin) {
 
 	prototype.render = function (options, next) {
 		if (options.inExtension === "ejs") {
+			options.templateData.filename = options.file.attributes.fullPath;
 			options.content = ejs.render(options.content, options.templateData);
 		}
 
